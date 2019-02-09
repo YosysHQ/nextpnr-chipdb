@@ -10,3 +10,4 @@ install_manifest.txt
 /bbasm
 /ImportExecutables.cmake
 chipdbs/
+/generated
