@@ -1,0 +1,12 @@
+Makefile
+cmake_install.cmake
+compile_commands.json
+CMakeFiles
+CMakeScripts
+CTestfile.cmake
+CMakeCache.txt
+build/
+install_manifest.txt
+/bbasm
+/ImportExecutables.cmake
+chipdbs/

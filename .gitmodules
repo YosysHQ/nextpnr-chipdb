@@ -1,0 +1,9 @@
+[submodule "external/nextpnr"]
+	path = external/nextpnr
+	url = https://github.com/YosysHQ/nextpnr
+[submodule "external/icestorm"]
+	path = external/icestorm
+	url = https://github.com/cliffordwolf/icestorm
+[submodule "external/prjtrellis"]
+	path = external/prjtrellis
+	url = https://github.com/SymbiFlow/prjtrellis
