@@ -1,7 +1,7 @@
 
 set(devices 25k 45k 85k)
 
-add_subdirectory(external/prjtrellis/libtrellis ${CMAKE_CURRENT_BINARY_DIR}/generated/libtrellis)
+add_subdirectory(external/prjtrellis/libtrellis ${CMAKE_CURRENT_BINARY_DIR}/generated/libtrellis EXCLUDE_FROM_ALL)
 
 set(TRELLIS_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/external/prjtrellis)
 
@@ -31,3 +31,5 @@ foreach (dev ${devices})
     target_sources(ecp5_chipdb PRIVATE ${DEV_CC_DB})
     set_source_files_properties(${DEV_CC_DB} PROPERTIES HEADER_FILE_ONLY TRUE)
 endforeach (dev)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/ecp5/chipdbs/ DESTINATION share/nextpnr/ecp5 FILES_MATCHING PATTERN "*.bin")

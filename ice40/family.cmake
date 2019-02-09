@@ -40,3 +40,5 @@ foreach (dev ${devices})
     target_sources(ice40_chipdb PRIVATE ${DEV_CC_DB})
     set_source_files_properties(${DEV_CC_DB} PROPERTIES HEADER_FILE_ONLY TRUE)
 endforeach (dev)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/ice40/chipdbs/ DESTINATION share/nextpnr/ice40 FILES_MATCHING PATTERN "*.bin")
