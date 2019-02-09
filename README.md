@@ -28,3 +28,13 @@ Use cmake `-D` options to specify which version of nextpnr-chipdb you want to bu
 Use `-DARCH=...` to set the architecture. It is a semicolon separated list.
 Use `cmake . -DARCH=all` to build all supported architectures.
 
+The default builds all supported targets allows nextpnr to use this as it's external chipdb.
+
+```
+cmake .
+make -j$(nproc)
+sudo make install
+```
+
+You can change the location where nextpnr-chipdb will be installed (this will usually default to `/usr/local`) by using
+`-DCMAKE_INSTALL_PREFIX=/install/prefix`.
