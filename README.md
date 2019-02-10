@@ -30,11 +30,11 @@ Use `cmake . -DARCH=all` to build all supported architectures.
 
 The default builds all supported targets allows nextpnr to use this as it's external chipdb.
 
+You can change the location where nextpnr-chipdb will be installed (this will usually default to `/usr/local`) by using
+`-DCMAKE_INSTALL_PREFIX=/install/prefix`.
+
 ```
-cmake .
+cmake . -DCMAKE_INSTALL_PREFIX=/usr
 make -j$(nproc)
 sudo make install
 ```
-
-You can change the location where nextpnr-chipdb will be installed (this will usually default to `/usr/local`) by using
-`-DCMAKE_INSTALL_PREFIX=/install/prefix`.
