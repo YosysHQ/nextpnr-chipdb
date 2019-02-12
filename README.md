@@ -17,7 +17,7 @@ Getting started
 ---------------
 
 ```
-git clone https://github.com/mmicko/nextpnr-chipdb
+git clone https://github.com/YosysHQ/nextpnr-chipdb
 cd nextpnr-chipdb
 git submodule update --init --recursive
 ```
