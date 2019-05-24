@@ -38,3 +38,12 @@ cmake . -DCMAKE_INSTALL_PREFIX=/usr
 make -j$(nproc)
 sudo make install
 ```
+
+For developers:
+---------------
+When there are changes on main repositores, get all submodules to latest with:
+
+```
+git pull --recurse-submodules
+git submodule update --remote --recursive
+```
